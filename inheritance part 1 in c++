@@ -1,0 +1,158 @@
+/*
+inheritance -- ekjoner , arekjon inherit korbe 
+
+1.single 
+2.multiple
+3.multilevel 
+4.hirarchical 
+5.diamond 
+*/
+
+#include <iostream>
+using namespace std;
+
+// class a{ // 1 base class
+//     public:
+    
+//     int a;
+    
+//     void f1()
+//     {
+//       cout<<"f1 called"<<endl;  
+//     }
+// };
+
+
+// class b:public a{ //1  derived class 
+//     public:
+    
+//     int b;
+    
+//     void f2()
+//     {
+//       cout<<"f2 called"<<endl;  
+//     }
+// };
+// int main()
+// {
+//     b ob1;
+//     ob1.f1();
+//     ob1.f2();
+
+//     return 0;
+//}
+
+
+
+
+//multiple inheritance - a,b,c - d 
+
+
+
+// class a{ // more then one  base class
+//     public:
+    
+//     int a;
+    
+//     void f1()
+//     {
+//       cout<<"f1 called- a class"<<endl;  
+//     }
+// };
+// class c{ // more then one  base class
+//     public:
+    
+//     int c;
+    
+//     void f3()
+//     {
+//       cout<<"f3 called - c class"<<endl;  
+//     }
+// };
+// class d{ // more then one  base class
+//     public:
+    
+//     int d;
+    
+//     void f4()
+//     {
+//       cout<<"f4 called- d class "<<endl;  
+//     }
+// };
+
+
+// class b:public a,public c, public d{ //1  derived class : 3 base class inherit 
+//     public:
+    
+//     int b;
+    
+//     void f2()
+//     {
+//       cout<<"f2 called -b class"<<endl;  
+//     }
+// };
+// int main()
+// {
+//     b ob1;
+//     ob1.f1();
+//     ob1.f2();
+//      ob1.f3();
+//     ob1.f4();
+    
+
+//     return 0;
+// }
+
+
+
+// multilevel - class a-> class b ->  class c
+
+
+
+
+
+
+
+
+//multilevel inheritance 
+
+class a{ 
+    public:
+    
+    int a;
+    
+    void f1()
+    {
+      cout<<"f1 called- a class"<<endl;  
+    }
+};
+class b:public a{ 
+    public:
+    
+    int b;
+    
+    void f2()
+    {
+      cout<<"f2 called -b class"<<endl;  
+    }
+};
+class c:public b{ 
+    public:
+    
+    int c;
+    
+    void f3()
+    {
+      cout<<"f3 called - c class"<<endl;  
+    }
+};
+
+int main()
+{
+    c ob1;
+    ob1.f1();
+    
+    
+
+    return 0;
+}
